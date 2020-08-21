@@ -71,7 +71,7 @@
                                 <a href="#" style="color: white;"><i class="material-icons">date_range</i></a>
                               </div>
                               <p class="card-category"><a href="#" style="color: gray; font-weight: bold;">Due Tasks</a></p>
-                              <h3 class="card-title">12</h3>
+                              <h3 class="card-title">{{ $task_due_count }}</h3>
                             </div>
                             <div class="card-footer">
                               <div class="stats">
@@ -90,7 +90,7 @@
                                 <a href="#" style="color: white;"><i class="material-icons">assignment_late</i></a>
                               </div>
                               <p class="card-category"><a href="#" style="color: gray; font-weight: bold;">Rejected Tasks</a></p>
-                              <h3 class="card-title">3</h3>
+                              <h3 class="card-title">{{ $task_rejected_count }}</h3>
                             </div>
                             <div class="card-footer">
                               <div class="stats">
@@ -109,7 +109,7 @@
                                 <a href="#" style="color: white;"><i class="material-icons">assessment</i></a>
                               </div>
                               <p class="card-category"><a href="#" style="color: gray; font-weight: bold;">Expired Tasks</a></p>
-                              <h3 class="card-title">5</h3>
+                              <h3 class="card-title">{{ $task_expired_count }}</h3>
                             </div>
                             <div class="card-footer">
                               <div class="stats">

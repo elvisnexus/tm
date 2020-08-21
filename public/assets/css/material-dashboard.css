@@ -2680,7 +2680,7 @@ select.form-control-lg:not([size]):not([multiple]),
 .form-control.is-invalid:focus,
 .was-validated .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
-  border-color: #f44336;
+  border-color: #f44336; /*COMMENT*/
   box-shadow: 0 0 0 0.2rem rgba(244, 67, 54, 0.25);
 }
 
@@ -15581,6 +15581,8 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   width: calc(100% - 260px);
   transition: 0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1);
 }
+
+
 
 .main-panel>.content {
   margin-top: 70px;
