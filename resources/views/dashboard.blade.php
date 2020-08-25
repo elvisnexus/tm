@@ -3,7 +3,6 @@
 
 @section('title', 'TM :: Dashboard')
 
-{{-- @section('taskCount', {{ count($tasks) }}) --}}
 
 @section('content')
 
