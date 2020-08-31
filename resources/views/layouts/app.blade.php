@@ -49,10 +49,15 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/">
-                    <i class="material-icons">exit_to_app</i>
-                    <p>Logout</p>
+                  <a class="nav-link" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        <i class="material-icons">exit_to_app</i>
+                                       <p> {{ __('Logout') }}</p>
                   </a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                    @csrf
+                  </form>
                 </li>
                 <!-- your sidebar here -->
               </ul>
@@ -64,7 +69,13 @@
               <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                   <div class="navbar-wrapper">
-                    <a class="navbar-brand" href="#">Welcome Elvis</a>
+                    <a class="navbar-brand" href="#">
+                      @auth 
+                      Welcome {{ Auth::user()->name }}!
+                      @else
+                      Welcome guest!
+                      @endauth
+                    </a>
                   </div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
@@ -100,7 +111,15 @@
                           <a class="dropdown-item" href="#">Profile</a>
                           <a class="dropdown-item" href="#">Settings</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Log out</a>
+                          <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        <i class="material-icons">exit_to_app</i>
+                                       Logout
+                          </a>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                            @csrf
+                          </form>
                         </div>
                       </li>
                       <!-- your navbar here -->

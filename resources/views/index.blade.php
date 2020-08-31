@@ -77,7 +77,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        {{-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -90,12 +90,12 @@
                         @endif
                     @endauth
                 </div>
-            @endif
+            @endif --}}
 
             
 
-            <div class="content">
-                <div>
+            <div class="content mt-5">
+                <div class="mt-5">
                     <img src="images/logo.png" class="mb-5">
                 </div>
 
@@ -104,7 +104,17 @@
                 </div>
 
                 <div class="mt-5">
-                    <button class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal"><strong>Login</strong></button>
+                  @if (Route::has('login'))
+                    @auth
+                      <p>
+                        You are logged in!
+                      </p>
+                      <a href="/home" class="btn btn-info"><strong>My Dashboard</strong></a>
+                    @else
+                        <a href="{{ __('login') }}" class="btn btn-info"><strong>{{ ('login') }}</strong></a>
+                    @endauth
+                  @endif  
+                    
                     {{-- <button class="btn btn-warning btn-round" data-toggle="modal" data-target="#signUpModal"><strong>Sign Up</strong></button> --}}
                 </div>
 

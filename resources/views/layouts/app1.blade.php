@@ -36,25 +36,14 @@
       
             <div class="sidebar-wrapper">
               <ul class="nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/dashboard">
-                    <i class="material-icons">dashboard</i>
-                    <p>Tasks Dashboard</p>
-                  </a>
-                </li>
+                
                 <li class="nav-item">
                   <a class="nav-link" href="#0">
-                    <i class="material-icons">supervisor_account</i>
-                    <p>Meetings</p>
+                    <i class="material-icons">info</i>
+                    <p>About TM</p>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">
-                    <i class="material-icons">exit_to_app</i>
-                    <p>Logout</p>
-                  </a>
-                </li>
-                <!-- your sidebar here -->
+                
               </ul>
             </div>
         </div>
@@ -64,7 +53,7 @@
               <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                   <div class="navbar-wrapper">
-                    <a class="navbar-brand" href="#">Welcome Elvis</a>
+                    <a class="navbar-brand" href="#">Welcome Guest!<br>Please Login</a>
                   </div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
@@ -73,38 +62,8 @@
                     <span class="navbar-toggler-icon icon-bar"></span>
                   </button>
                   <div class="collapse navbar-collapse justify-content-end">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="material-icons">notifications</i>
-                          <span class="notification">3</span>
-                          <p class="d-lg-none d-md-block">
-                            Some Actions
-                          </p>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">David needs more time on his task</a>
-                          <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                          <a class="dropdown-item" href="#">Ugo just completed his task</a>
-                          <a class="dropdown-item" href="notifications.html" style="color: cornflowerblue" >View all</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="material-icons">person</i>
-                          <p class="d-lg-none d-md-block">
-                            Account
-                          </p>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                          <a class="dropdown-item" href="#">Profile</a>
-                          <a class="dropdown-item" href="#">Settings</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Log out</a>
-                        </div>
-                      </li>
-                      <!-- your navbar here -->
-                    </ul>
+                    <img class="logo" src=""/>
+                    
                   </div>
                 </div>
               </nav>
@@ -115,172 +74,6 @@
               <div class="container-fluid">
                 <!-- your content here -->
                 
-                 
-      
-                  <!--NEW TASK MODAL-->
-      
-                  <div class="modal fade" id="newTaskModal" tabindex="-1" role="dialog">
-                    <div class="modal-dialog modal-signup" role="document">
-                      <div class="modal-content">
-                        <div class="card card-signup card-plain">
-                          <div class="modal-header">
-                            <h5 class="modal-title card-title" style="font-weight: bold;">New Personal Task</h5>
-                            <!-- <button class="btn btn-default">Register</button> -->
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="material-icons">clear</i>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-md-12 mr-auto">
-                  
-                                <form class="form" method="" action="">
-                                  <div class="card-body">
-                                    <div class="form-group">
-                                      <div class="input-group">
-                                        <div class="input-group-prepend">
-                                          <div class="input-group-text"><i class="material-icons">create</i></div>
-                                        </div>
-                                          <input type="text" class="form-control" placeholder="Task Title">
-                                      </div>
-                                    </div>
-                  
-                                  <div class="form-group">
-                                    <div class="input-group">
-                                      <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="material-icons">description</i></div>
-                                      </div>
-                                        <input type="text" class="form-control" placeholder="Task Description">
-                                    </div>
-                                  </div>
-                  
-                                  <div class="form-group">
-                                    <div class="input-group">
-                                      <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="material-icons">calendar_today</i></div>
-                                      </div>
-                                        <input type="date" id="taskDate" name="taskDate" placeholder="Select Due Date" title="Select due date" class="form-control">
-                                        <span>Select a due date.</span>
-                                    </div>
-                                  </div>
-                                  
-                                </div>
-          
-                                <div class="modal-footer justify-content-center">
-                                  <a href="#pablo" class="btn btn-info btn-round"><i class="material-icons">add</i> Add Task</a>
-                                </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <!--NEW TASK MODAL END-->
-      
-      
-      
-                  <!--ASSIGN TASK MODAL-->
-      
-                  <div class="modal fade" id="assignTaskModal" tabindex="-1" role="dialog">
-                    <div class="modal-dialog modal-signup" role="document">
-                      <div class="modal-content">
-                        <div class="card card-signup card-plain">
-                          <div class="modal-header">
-                            <h5 class="modal-title card-title" style="font-weight: bold;">Assign Task</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="material-icons">clear</i>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-md-12 mr-auto">
-                                <form class="form" method="" action="">
-                                  <div class="card-body">
-                                    <div class="form-group">
-                                      <div class="input-group">
-                                        <div class="input-group-prepend">
-                                          <div class="input-group-text"><i class="material-icons">create</i></div>
-                                        </div>
-                                          <input type="text" class="form-control" placeholder="Task Title">
-                                      </div>
-                                    </div>
-                  
-                                  <div class="form-group">
-                                    <div class="input-group">
-                                      <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="material-icons">description</i></div>
-                                      </div>
-                                        <input type="text" class="form-control" placeholder="Task Description">
-                                    </div>
-                                  </div>
-                                  <div class="form-group">
-                                    <div class="input-group" style="color: black;">
-                                      <div class="input-group-text"><i class="material-icons">contacts</i></div>
-                                      <div class="input-group-prepend">
-                                        <label title="Recepient">
-                                          Recepient
-                                        </label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="form-group">
-                                    <div class="input-group">
-                                      <!-- <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="material-icons">calendar_today</i></div>
-                                      </div> -->
-                                      <!-- <input type="date" id="taskDate" name="taskDate" placeholder="Select Due Date" title="Select due date" class="form-control"> -->
-                                      <div class="input-group-text"><i class="material-icons"></i></div>
-                                      
-                                      <div class="form-check form-check-radio form-check-inline">
-                                        <label class="form-check-label">
-                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Individual
-                                          <span class="circle">
-                                              <span class="check"></span>
-                                          </span>
-                                        </label>
-                                      </div>
-                                      
-                                      <div class="form-check form-check-radio form-check-inline">
-                                        <label class="form-check-label">
-                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Group
-                                          <span class="circle">
-                                              <span class="check"></span>
-                                          </span>
-                                        </label>
-                                      </div>
-                                    
-                                    </div>
-                                  </div>
-                  
-                                  <div class="form-group">
-                                    <div class="input-group">
-                                      <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="material-icons">calendar_today</i></div>
-                                      </div>
-                                        <input type="date" id="taskDate" name="taskDate" placeholder="Select Due Date" title="Select due date" class="form-control">
-                                        <span>Select a due date.</span>
-                                    </div>
-                                  </div>
-                                  
-                                </div>
-          
-                                <div class="modal-footer justify-content-center">
-                                  <a href="#pablo" class="btn btn-info btn-round"><i class="material-icons">add</i> Assign</a>
-                                </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <!--ASSIGN TASK MODAL END-->
-
                   @include('inc.messages')
       
                   <!--ALL TASKS STATISTICS-->
