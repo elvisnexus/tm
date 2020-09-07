@@ -53,7 +53,8 @@
               <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                   <div class="navbar-wrapper">
-                    <a class="navbar-brand" href="#">Welcome Guest!<br>Please Login</a>
+                    {{-- <a class="navbar-brand" href="#">Welcome Guest! Please Login</a> --}}
+                    <p class="navbar-brand">Welcome Guest! Please Login</p>
                   </div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
