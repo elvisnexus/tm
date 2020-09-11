@@ -7,6 +7,10 @@ use App\Task; //this will use the Task.php Model
 
 class TaskViewController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *

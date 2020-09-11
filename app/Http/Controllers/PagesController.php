@@ -6,6 +6,10 @@ use App\Task; //this will use the Task.php Model
 
 class PagesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /*Return the homepage to the route web.php*/
     public function index()
     {
